@@ -1,0 +1,39 @@
+{
+  "name": "opxcms/opx-variables",
+  "description": "OpxCMS variables module.",
+  "type": "library",
+  "keywords": [
+    "opxcms",
+    "variables",
+    "module"
+  ],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/opxcms/opx-variables/issues",
+    "source": "https://github.com/opxcms/opx-variables"
+  },
+  "authors": [
+    {
+      "name": "Lozovoy Vyacheslav",
+      "email": "opxcms@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3",
+    "opxcms/opx-foundation": "^1.0.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Modules\\Opx\\Variables\\": "src/"
+    }
+  },
+  "extra": {
+    "opxcms" : {
+      "module": "Modules\\Opx\\Variables\\Variables"
+    }
+  },
+  "minimum-stability": "dev"
+}
