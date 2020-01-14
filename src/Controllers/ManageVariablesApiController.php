@@ -42,6 +42,10 @@ class ManageVariablesApiController extends APIFormController
     {
         $path = app()->storagePath() . DIRECTORY_SEPARATOR . 'system' . DIRECTORY_SEPARATOR . 'variables';
 
+        if (!file_exists($path)) {
+            return [];
+        }
+
         $serialized = file_get_contents($path);
 
         if ($serialized === null || $serialized === false) {
@@ -64,7 +68,7 @@ class ManageVariablesApiController extends APIFormController
     /**
      * Store values array.
      *
-     * @param  array $vars
+     * @param array $vars
      *
      * @return  void
      */
