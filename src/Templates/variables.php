@@ -3,10 +3,6 @@
 namespace Modules\Shop\Items\Templates;
 
 use Core\Foundation\Template\Template;
-use Modules\Shop\Categories\Models\Category;
-use Modules\Shop\Currency\ShopCurrency;
-use Modules\Shop\Properties\Models\Property;
-use Modules\Shop\Shops\ShopShops;
 
 /**
  * HELP:

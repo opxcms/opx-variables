@@ -3,7 +3,6 @@
 namespace Modules\Opx\Variables;
 
 use Core\Foundation\Module\BaseModule;
-use Modules\Opx\Slideshow\Models\Slide;
 
 class Variables extends BaseModule
 {
